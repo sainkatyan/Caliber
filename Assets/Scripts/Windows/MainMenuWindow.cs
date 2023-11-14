@@ -10,7 +10,11 @@ namespace Windows
         [SerializeField] private Button armorButton;
         [SerializeField] private Button exchangeButton;
 
-        private void Awake()
+        [Space]
+        [SerializeField] private WindowBase consumableWindow;
+        [SerializeField] private WindowBase convertWindow;
+
+        private void Start()
         {
             Initialize();
         }
@@ -26,19 +30,24 @@ namespace Windows
             medpackButton.onClick.AddListener(ShowRevisionWindow);
             armorButton.onClick.AddListener(ShowRevisionWindow);
         }
-
-        private void ShowWindow(string pathPrefab)
+        
+        private void CreateWindow(string pathPrefab)
         {
             WindowsContainer.CreateWindow<WindowBase>(pathPrefab, foreground);
         }
 
+        private void ShowWindow(WindowBase windowBase)
+        {
+            WindowsContainer.ShowWindow(windowBase);
+        }
+
         private void ShowRevisionWindow()
         {
-            ShowWindow(ConsumablesWindow.ConsumablesWindowInject._PathPrefab);
+            ShowWindow(consumableWindow);
         }
         private void ShowExchangeWindow()
         {
-            ShowWindow(ConvertWindow.ConvertWindowInject._PathPrefab);
+            ShowWindow(convertWindow);
         }
 
         private void OnDisable()

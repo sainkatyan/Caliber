@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace Windows
 {
-    [RequireComponent(typeof(CanvasGroup), typeof(Canvas), typeof(GraphicRaycaster))]
+    [RequireComponent(typeof(CanvasGroup))]
     public class WindowBase : MonoBehaviour
     {
         private CanvasGroup canvasGroup;
@@ -16,7 +16,7 @@ namespace Windows
         {
             if (gameObject == null) return;
             canvasGroup.interactable = false;
-            Destroy(gameObject);
+            WindowsContainer.HideWindow(this);
         }
     }
 }

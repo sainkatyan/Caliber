@@ -11,5 +11,16 @@ namespace Windows
             createWindow.Initialize();
             return createWindow;
         }
+        
+        public static void ShowWindow(WindowBase windowBase)
+        {
+            windowBase.gameObject.SetActive(true);
+            windowBase.Initialize();
+        }
+        
+        public static void HideWindow(WindowBase windowBase)
+        {
+            windowBase.gameObject.SetActive(false);
+        }
     }
 }

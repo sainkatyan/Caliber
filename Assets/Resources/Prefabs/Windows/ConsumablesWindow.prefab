@@ -240,7 +240,7 @@ PrefabInstance:
     - target: {fileID: 3190010899736946442, guid: e26898acf236ba2458323bf3613cb37d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 6885804965595376299}
+      objectReference: {fileID: 1096785719156550299}
     - target: {fileID: 3190010899736946442, guid: e26898acf236ba2458323bf3613cb37d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -400,7 +400,7 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &2910755933304561586
+--- !u!114 &1013045201352933083
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -414,7 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buyArmorButton: {fileID: 7665707333271651244}
   buyMedpacketButton: {fileID: 4093417140102828997}
---- !u!114 &6885804965595376299
+--- !u!114 &1096785719156550299
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ba5f2af5efbec46aa6052fb07e1b09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  consumablesWindowView: {fileID: 2910755933304561586}
+  consumablesWindowView: {fileID: 1013045201352933083}
 --- !u!224 &2393967234857417022 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 916121660646320931, guid: e26898acf236ba2458323bf3613cb37d, type: 3}
